@@ -356,6 +356,9 @@ static int ZenityErrorBox(char *message)
 
 static boolean already_quitting = false;
 
+// varargs seem to screw up gcc -O1...
+#pragma GCC optimize ("O0")
+
 void I_Error (char *error, ...)
 {
     char msgbuf[512];

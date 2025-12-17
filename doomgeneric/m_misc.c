@@ -423,6 +423,9 @@ boolean M_StringEndsWith(const char *s, const char *suffix)
 // Return a newly-malloced string with all the strings given as arguments
 // concatenated together.
 
+// indexing of detailNames broken..
+#pragma GCC optimize ("O0")
+
 char *M_StringJoin(const char *s, ...)
 {
     char *result;

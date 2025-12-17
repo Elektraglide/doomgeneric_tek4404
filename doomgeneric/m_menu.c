@@ -977,12 +977,14 @@ void M_Episode(int choice)
 }
 
 
-
 //
 // M_Options
 //
 static char *detailNames[2] = {"M_GDHIGH","M_GDLOW"};
 static char *msgNames[2] = {"M_MSGOFF","M_MSGON"};
+
+// indexing of detailNames broken..
+#pragma GCC optimize ("O0")
 
 void M_DrawOptions(void)
 {
